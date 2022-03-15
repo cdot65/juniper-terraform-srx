@@ -15,17 +15,25 @@ nav:
   - Documentation:
       - Overview: "docs/overview.md"
       - Terraform:
-          - Providers:
-              - addressbook: "docs/terraform/modules/addressbook.md"
-              - ike: "docs/terraform/modules/ike.md"
-              - ipsec: "docs/terraform/modules/ipsec.md"
-          - Resources:
-              - addressbook: "docs/terraform/resources/addressbook.md"
-              - ike: "docs/terraform/resources/ike.md"
-              - ipsec: "docs/terraform/resources/ipsec.md"
+          - addressbook:
+              - Build: "docs/terraform/build/addressbook.md"
+              - Provider: "docs/terraform/providers/addressbook.md"
+              - Resources: "docs/terraform/resources/addressbook.md"
+              - Workspace: "docs/terraform/workspaces/addressbook.md"
+          - ike:
+              - Build: "docs/terraform/build/ike.md"
+              - Provider: "docs/terraform/providers/ike.md"
+              - Resources: "docs/terraform/resources/ike.md"
+              - Workspace: "docs/terraform/workspaces/ike.md"
+          - ipsec:
+              - Build: "docs/terraform/build/ipsec.md"
+              - Provider: "docs/terraform/providers/ipsec.md"
+              - Resources: "docs/terraform/resources/ipsec.md"
+              - Workspace: "docs/terraform/workspaces/ipsec.md"
+      - Lab:
+          - Local: "docs/lab/local.md"
+          - vLabs: "docs/lab/vlabs.md"
       - Network:
-          - Overview: "docs/network/overview.md"
-      - Lab Environment:
           - Overview: "docs/network/overview.md"
 
 theme:

@@ -11,7 +11,7 @@ provider "junos-vsrx" {
     host = "192.168.105.196"
     port = 22
     username = "napalm"
-    password = "cicatrix-aura-deceit-conform"
+    password = "aura-deceit-conform"
     sshkey = ""
 }
 

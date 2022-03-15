@@ -1,4 +1,4 @@
 ---
 template: layouts/home.html
-title: Juniper Apstra Edge Design
+title: Juniper Terraform SRX
 ---

@@ -1,0 +1,6 @@
+<file-list>
+    <xpath name="/security/address-book/name" />
+    <xpath name="/security/address-book/description" />
+    <xpath name="/security/address-book/address/name" />
+    <xpath name="/security/address-book/address/ip-prefix" />
+</file-list>

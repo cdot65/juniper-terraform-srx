@@ -14,14 +14,15 @@ nav:
   - Home: "index.md"
   - Documentation:
       - Overview: "docs/overview.md"
-      - Ansible:
-          - Modules:
-              - blueprint: "docs/ansible/modules/blueprint.md"
-              - design: "docs/ansible/modules/design.md"
-              - resources: "docs/ansible/modules/resources.md"
-          - Plugins: "docs/network/overview.md"
-          - Roles: "docs/network/overview.md"
-          - Templates: "docs/network/overview.md"
+      - Terraform:
+          - Providers:
+              - addressbook: "docs/terraform/modules/addressbook.md"
+              - ike: "docs/terraform/modules/ike.md"
+              - ipsec: "docs/terraform/modules/ipsec.md"
+          - Resources:
+              - addressbook: "docs/terraform/resources/addressbook.md"
+              - ike: "docs/terraform/resources/ike.md"
+              - ipsec: "docs/terraform/resources/ipsec.md"
       - Network:
           - Overview: "docs/network/overview.md"
       - Lab Environment:

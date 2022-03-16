@@ -1,31 +1,31 @@
 terraform {
   required_providers {
-    junos-vsrx = {
-      source  = "cdot65/nops/junos-vsrx"
+    junos-addressbook = {
+      source  = "cdot65/juniper-terraform-srx/junos-addressbook"
       version = ">= 21.3.0"
     }
   }
 }
 
-provider "junos-vsrx" {
+provider "junos-addressbook" {
     host = "192.168.105.196"
     port = 22
-    username = "napalm"
-    password = "aura-deceit-conform"
+    username = "terraform"
+    password = "juniper123"
     sshkey = ""
 }
 
-module "vsrx_1" {
-   source = "./vsrx_1"
-   providers = { junos-vsrx = junos-vsrx }
-   depends_on = [junos-vsrx_destroycommit.commit-main]
+module "enterprise-fw1" {
+   source = "./enterprise-fw1"
+   providers = { junos-addressbook = junos-addressbook }
+   depends_on = [junos-addressbook_destroycommit.commit-main]
 }
 
-resource "junos-vsrx_commit" "commit-main" {
+resource "junos-addressbook_commit" "commit-main" {
     resource_name = "commit"
-    depends_on = [module.vsrx_1]
+    depends_on = [module.enterprise-fw1]
 }
 
-resource "junos-vsrx_destroycommit" "commit-main" {
+resource "junos-addressbook_destroycommit" "commit-main" {
   resource_name = "destroycommit"
 }

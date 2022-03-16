@@ -1,0 +1,65 @@
+site_name: "Juniper Terraform SRX"
+site_description: "Build and deploy Juniper SRX configurations with Terraform."
+site_url: "https://cdot65.github.io/juniper-terraform-srx/"
+repo_name: "cdot65/juniper-terraform-srx"
+repo_url: "https://github.com/cdot65/juniper-terraform-srx"
+edit_uri: "edit/mainline/site/content"
+copyright: "Copyright &copy; 2022 cdot65"
+docs_dir: "site/content"
+site_dir: "docs"
+extra_css:
+  - "stylesheets/cdot65.css"
+
+nav:
+  - Home: "index.md"
+  - Documentation:
+      - Overview: "docs/overview.md"
+      - Terraform:
+          - addressbook:
+              - Build: "docs/terraform/build/addressbook.md"
+              - Provider: "docs/terraform/providers/addressbook.md"
+              - Resources: "docs/terraform/resources/addressbook.md"
+              - Workspace: "docs/terraform/workspaces/addressbook.md"
+          - ike:
+              - Build: "docs/terraform/build/ike.md"
+              - Provider: "docs/terraform/providers/ike.md"
+              - Resources: "docs/terraform/resources/ike.md"
+              - Workspace: "docs/terraform/workspaces/ike.md"
+          - ipsec:
+              - Build: "docs/terraform/build/ipsec.md"
+              - Provider: "docs/terraform/providers/ipsec.md"
+              - Resources: "docs/terraform/resources/ipsec.md"
+              - Workspace: "docs/terraform/workspaces/ipsec.md"
+      - Lab:
+          - Local: "docs/lab/local.md"
+          - vLabs: "docs/lab/vlabs.md"
+      - Network:
+          - Overview: "docs/network/overview.md"
+
+theme:
+  name: "material"
+  custom_dir: "site/overrides"
+  palette:
+    primary: "white"
+  font: false
+  icon:
+    logo: "octicons/terminal-16"
+  favicon: "assets/images/favicon.png"
+  language: "en"
+  features:
+    - "tabs"
+    - "instant"
+
+markdown_extensions:
+  - "admonition"
+  - "pymdownx.details"
+  - "pymdownx.superfences"
+  - "pymdownx.tabbed"
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+plugins:
+  - "search"
+  - macros:
+      include_dir: "site/content/docs/include"

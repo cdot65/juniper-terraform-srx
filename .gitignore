@@ -17,3 +17,8 @@
 .terraform.lock.hcl
 files/terraform/jtaf
 *.tfstate
+*backup
+*.tfplan
+*backup
+*.tfplan
+history.log

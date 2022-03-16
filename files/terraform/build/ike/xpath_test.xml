@@ -1,0 +1,18 @@
+<file-list>
+    <xpath name="/security/ike/proposal/name" />
+    <xpath name="/security/ike/proposal/description" />
+    <xpath name="/security/ike/proposal/authentication-method" />
+    <xpath name="/security/ike/proposal/dh-group" />
+    <xpath name="/security/ike/proposal/authentication-algorithm" />
+    <xpath name="/security/ike/proposal/encryption-algorithm" />
+    <xpath name="/security/ike/proposal/lifetime-seconds" />
+    <xpath name="/security/ike/policy/name" />
+    <xpath name="/security/ike/policy/mode" />
+    <xpath name="/security/ike/policy/description" />
+    <xpath name="/security/ike/policy/proposals" />
+    <xpath name="/security/ike/policy/pre-shared-key/ascii-text" />
+    <xpath name="/security/ike/gateway/name" />
+    <xpath name="/security/ike/gateway/address" />
+    <xpath name="/security/ike/gateway/ike-policy" />
+    <xpath name="/security/ike/gateway/external-interface" />
+</file-list>

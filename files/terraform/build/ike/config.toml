@@ -1,0 +1,5 @@
+yangDir = "/home/cdot/dev/juniper-terraform-srx/files/terraform/build/ike"
+providerDir = "/home/cdot/dev/juniper-terraform-srx/files/terraform/build/ike/provider"
+xpathPath = "/home/cdot/dev/juniper-terraform-srx/files/terraform/build/ike/xpath_test.xml"
+fileType = "both"
+providerName = "ike"

@@ -1,0 +1,433 @@
+{
+  "format_version": "1.0",
+  "provider_schemas": {
+    "cdot65/juniper-terraform-srx/junos-nat": {
+      "provider": {
+        "version": 0,
+        "block": {
+          "attributes": {
+            "host": {
+              "type": "string",
+              "description_kind": "plain",
+              "required": true
+            },
+            "password": {
+              "type": "string",
+              "description_kind": "plain",
+              "required": true
+            },
+            "port": {
+              "type": "number",
+              "description_kind": "plain",
+              "required": true
+            },
+            "sshkey": {
+              "type": "string",
+              "description_kind": "plain",
+              "required": true
+            },
+            "username": {
+              "type": "string",
+              "description_kind": "plain",
+              "required": true
+            }
+          },
+          "description_kind": "plain"
+        }
+      },
+      "resource_schemas": {
+        "junos-nat_SecurityNatDestinationPoolAddressIpaddr": {
+          "version": 0,
+          "block": {
+            "attributes": {
+              "id": {
+                "type": "string",
+                "description_kind": "plain",
+                "optional": true,
+                "computed": true
+              },
+              "ipaddr": {
+                "type": "string",
+                "description": "xpath is: config.Groups.V_pool.V_address. IPv4 or IPv6 address or address range",
+                "description_kind": "plain",
+                "optional": true
+              },
+              "name": {
+                "type": "string",
+                "description": "xpath is: config.Groups.V_pool",
+                "description_kind": "plain",
+                "optional": true
+              },
+              "resource_name": {
+                "type": "string",
+                "description_kind": "plain",
+                "required": true
+              }
+            },
+            "description_kind": "plain"
+          }
+        },
+        "junos-nat_SecurityNatDestinationPoolAddressPort": {
+          "version": 0,
+          "block": {
+            "attributes": {
+              "id": {
+                "type": "string",
+                "description_kind": "plain",
+                "optional": true,
+                "computed": true
+              },
+              "name": {
+                "type": "string",
+                "description": "xpath is: config.Groups.V_pool",
+                "description_kind": "plain",
+                "optional": true
+              },
+              "port": {
+                "type": "string",
+                "description": "xpath is: config.Groups.V_pool.V_address. Specify the port value",
+                "description_kind": "plain",
+                "optional": true
+              },
+              "resource_name": {
+                "type": "string",
+                "description_kind": "plain",
+                "required": true
+              }
+            },
+            "description_kind": "plain"
+          }
+        },
+        "junos-nat_SecurityNatDestinationPoolDescription": {
+          "version": 0,
+          "block": {
+            "attributes": {
+              "description": {
+                "type": "string",
+                "description": "xpath is: config.Groups.V_pool. Text description of pool",
+                "description_kind": "plain",
+                "optional": true
+              },
+              "id": {
+                "type": "string",
+                "description_kind": "plain",
+                "optional": true,
+                "computed": true
+              },
+              "name": {
+                "type": "string",
+                "description": "xpath is: config.Groups.V_pool",
+                "description_kind": "plain",
+                "optional": true
+              },
+              "resource_name": {
+                "type": "string",
+                "description_kind": "plain",
+                "required": true
+              }
+            },
+            "description_kind": "plain"
+          }
+        },
+        "junos-nat_SecurityNatDestinationPoolName": {
+          "version": 0,
+          "block": {
+            "attributes": {
+              "id": {
+                "type": "string",
+                "description_kind": "plain",
+                "optional": true,
+                "computed": true
+              },
+              "name": {
+                "type": "string",
+                "description": "xpath is: config.Groups.V_pool. Pool name",
+                "description_kind": "plain",
+                "optional": true
+              },
+              "resource_name": {
+                "type": "string",
+                "description_kind": "plain",
+                "required": true
+              }
+            },
+            "description_kind": "plain"
+          }
+        },
+        "junos-nat_SecurityNatDestinationRule__SetFromZone": {
+          "version": 0,
+          "block": {
+            "attributes": {
+              "id": {
+                "type": "string",
+                "description_kind": "plain",
+                "optional": true,
+                "computed": true
+              },
+              "name": {
+                "type": "string",
+                "description": "xpath is: config.Groups.V_rule__set",
+                "description_kind": "plain",
+                "optional": true
+              },
+              "resource_name": {
+                "type": "string",
+                "description_kind": "plain",
+                "required": true
+              },
+              "zone": {
+                "type": "string",
+                "description": "xpath is: config.Groups.V_rule__set.V_from. Source zone list",
+                "description_kind": "plain",
+                "optional": true
+              }
+            },
+            "description_kind": "plain"
+          }
+        },
+        "junos-nat_SecurityNatDestinationRule__SetName": {
+          "version": 0,
+          "block": {
+            "attributes": {
+              "id": {
+                "type": "string",
+                "description_kind": "plain",
+                "optional": true,
+                "computed": true
+              },
+              "name": {
+                "type": "string",
+                "description": "xpath is: config.Groups.V_rule__set. Rule-set name",
+                "description_kind": "plain",
+                "optional": true
+              },
+              "resource_name": {
+                "type": "string",
+                "description_kind": "plain",
+                "required": true
+              }
+            },
+            "description_kind": "plain"
+          }
+        },
+        "junos-nat_SecurityNatDestinationRule__SetRuleDest__Nat__Rule__MatchDestination__AddressDst__Addr": {
+          "version": 0,
+          "block": {
+            "attributes": {
+              "dst__addr": {
+                "type": "string",
+                "description": "xpath is: config.Groups.V_rule__set.V_rule.V_destination__address. IPv4 or IPv6 destination address",
+                "description_kind": "plain",
+                "optional": true
+              },
+              "id": {
+                "type": "string",
+                "description_kind": "plain",
+                "optional": true,
+                "computed": true
+              },
+              "name": {
+                "type": "string",
+                "description": "xpath is: config.Groups.V_rule__set",
+                "description_kind": "plain",
+                "optional": true
+              },
+              "name__1": {
+                "type": "string",
+                "description": "xpath is: config.Groups.V_rule__set.V_rule",
+                "description_kind": "plain",
+                "optional": true
+              },
+              "resource_name": {
+                "type": "string",
+                "description_kind": "plain",
+                "required": true
+              }
+            },
+            "description_kind": "plain"
+          }
+        },
+        "junos-nat_SecurityNatDestinationRule__SetRuleDest__Nat__Rule__MatchDestination__PortName": {
+          "version": 0,
+          "block": {
+            "attributes": {
+              "id": {
+                "type": "string",
+                "description_kind": "plain",
+                "optional": true,
+                "computed": true
+              },
+              "name": {
+                "type": "string",
+                "description": "xpath is: config.Groups.V_rule__set",
+                "description_kind": "plain",
+                "optional": true
+              },
+              "name__1": {
+                "type": "string",
+                "description": "xpath is: config.Groups.V_rule__set.V_rule",
+                "description_kind": "plain",
+                "optional": true
+              },
+              "name__2": {
+                "type": "string",
+                "description": "xpath is: config.Groups.V_rule__set.V_rule.V_destination__port. Port or lower limit of port range",
+                "description_kind": "plain",
+                "optional": true
+              },
+              "resource_name": {
+                "type": "string",
+                "description_kind": "plain",
+                "required": true
+              }
+            },
+            "description_kind": "plain"
+          }
+        },
+        "junos-nat_SecurityNatDestinationRule__SetRuleDest__Nat__Rule__MatchSource__Address": {
+          "version": 0,
+          "block": {
+            "attributes": {
+              "id": {
+                "type": "string",
+                "description_kind": "plain",
+                "optional": true,
+                "computed": true
+              },
+              "name": {
+                "type": "string",
+                "description": "xpath is: config.Groups.V_rule__set",
+                "description_kind": "plain",
+                "optional": true
+              },
+              "name__1": {
+                "type": "string",
+                "description": "xpath is: config.Groups.V_rule__set.V_rule",
+                "description_kind": "plain",
+                "optional": true
+              },
+              "resource_name": {
+                "type": "string",
+                "description_kind": "plain",
+                "required": true
+              },
+              "source__address": {
+                "type": "string",
+                "description": "xpath is: config.Groups.V_rule__set.V_rule.V_dest__nat__rule__match. Source address",
+                "description_kind": "plain",
+                "optional": true
+              }
+            },
+            "description_kind": "plain"
+          }
+        },
+        "junos-nat_SecurityNatDestinationRule__SetRuleName": {
+          "version": 0,
+          "block": {
+            "attributes": {
+              "id": {
+                "type": "string",
+                "description_kind": "plain",
+                "optional": true,
+                "computed": true
+              },
+              "name": {
+                "type": "string",
+                "description": "xpath is: config.Groups.V_rule__set",
+                "description_kind": "plain",
+                "optional": true
+              },
+              "name__1": {
+                "type": "string",
+                "description": "xpath is: config.Groups.V_rule__set.V_rule. Rule name",
+                "description_kind": "plain",
+                "optional": true
+              },
+              "resource_name": {
+                "type": "string",
+                "description_kind": "plain",
+                "required": true
+              }
+            },
+            "description_kind": "plain"
+          }
+        },
+        "junos-nat_SecurityNatDestinationRule__SetRuleThenDestination__NatPoolPool__Name": {
+          "version": 0,
+          "block": {
+            "attributes": {
+              "id": {
+                "type": "string",
+                "description_kind": "plain",
+                "optional": true,
+                "computed": true
+              },
+              "name": {
+                "type": "string",
+                "description": "xpath is: config.Groups.V_rule__set",
+                "description_kind": "plain",
+                "optional": true
+              },
+              "name__1": {
+                "type": "string",
+                "description": "xpath is: config.Groups.V_rule__set.V_rule",
+                "description_kind": "plain",
+                "optional": true
+              },
+              "pool__name": {
+                "type": "string",
+                "description": "xpath is: config.Groups.V_rule__set.V_rule.V_pool. Name of Destination NAT pool",
+                "description_kind": "plain",
+                "optional": true
+              },
+              "resource_name": {
+                "type": "string",
+                "description_kind": "plain",
+                "required": true
+              }
+            },
+            "description_kind": "plain"
+          }
+        },
+        "junos-nat_commit": {
+          "version": 0,
+          "block": {
+            "attributes": {
+              "id": {
+                "type": "string",
+                "description_kind": "plain",
+                "optional": true,
+                "computed": true
+              },
+              "resource_name": {
+                "type": "string",
+                "description_kind": "plain",
+                "required": true
+              }
+            },
+            "description_kind": "plain"
+          }
+        },
+        "junos-nat_destroycommit": {
+          "version": 0,
+          "block": {
+            "attributes": {
+              "id": {
+                "type": "string",
+                "description_kind": "plain",
+                "optional": true,
+                "computed": true
+              },
+              "resource_name": {
+                "type": "string",
+                "description_kind": "plain",
+                "required": true
+              }
+            },
+            "description_kind": "plain"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<file-list>
+    <xpath name="/security/nat/destination/pool/name" />
+    <xpath name="/security/nat/destination/pool/description" />
+    <xpath name="/security/nat/destination/pool/address/ipaddr" />
+    <xpath name="/security/nat/destination/pool/address/port" />
+    <xpath name="/security/nat/destination/rule-set/name" />
+    <xpath name="/security/nat/destination/rule-set/from/zone" />
+    <xpath name="/security/nat/destination/rule-set/rule/name" />
+    <xpath name="/security/nat/destination/rule-set/rule/dest-nat-rule-match/source-address" />
+    <xpath name="/security/nat/destination/rule-set/rule/dest-nat-rule-match/destination-address/dst-addr" />
+    <xpath name="/security/nat/destination/rule-set/rule/dest-nat-rule-match/destination-port/name" />
+    <xpath name="/security/nat/destination/rule-set/rule/then/destination-nat/pool/pool-name" />
+</file-list>

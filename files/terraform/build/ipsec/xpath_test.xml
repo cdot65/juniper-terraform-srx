@@ -1,0 +1,18 @@
+<file-list>
+    <xpath name="/security/ipsec/proposal/name" />
+    <xpath name="/security/ipsec/proposal/description" />
+    <xpath name="/security/ipsec/proposal/protocol" />
+    <xpath name="/security/ipsec/proposal/authentication-algorithm" />
+    <xpath name="/security/ipsec/proposal/encryption-algorithm" />
+    <xpath name="/security/ipsec/policy/name" />
+    <xpath name="/security/ipsec/policy/proposals" />
+    <xpath name="/security/ipsec/vpn/name" />
+    <xpath name="/security/ipsec/vpn/ike/gateway" />
+    <xpath name="/security/ipsec/vpn/ike/ipsec-policy" />
+    <xpath name="/security/ipsec/vpn/establish-tunnels" />
+    <xpath name="/security/address-book/name" />
+    <xpath name="/security/address-book/address/name" />
+    <xpath name="/security/address-book/address/ip-prefix" />
+    <xpath name="/security/address-book/attach/zone/name" />
+    <xpath name="/security/flow/tcp-mss/ipsec-vpn/mss" />
+</file-list>

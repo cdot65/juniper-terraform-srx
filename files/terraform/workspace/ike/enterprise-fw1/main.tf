@@ -1,4 +1,11 @@
 terraform {
+  cloud {
+    organization = "cdot65"
+
+    workspaces {
+      name = "srx-ike"
+    }
+  }
   required_providers {
     junos-ike = {
       source  = "cdot65/juniper-terraform-srx/junos-ike"

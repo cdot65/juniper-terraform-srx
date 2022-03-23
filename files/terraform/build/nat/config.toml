@@ -1,0 +1,5 @@
+yangDir = "/home/cdot/dev/juniper-terraform-srx/files/terraform/build/nat"
+providerDir = "/home/cdot/dev/juniper-terraform-srx/files/terraform/build/nat/provider"
+xpathPath = "/home/cdot/dev/juniper-terraform-srx/files/terraform/build/nat/xpath_test.xml"
+fileType = "both"
+providerName = "nat"

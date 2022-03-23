@@ -1,0 +1,5 @@
+yangDir = "/home/cdot/dev/juniper-terraform-srx/files/terraform/build/ipsec-policy-based"
+providerDir = "/home/cdot/dev/juniper-terraform-srx/files/terraform/build/ipsec-policy-based/provider"
+xpathPath = "/home/cdot/dev/juniper-terraform-srx/files/terraform/build/ipsec-policy-based/xpath_test.xml"
+fileType = "both"
+providerName = "ipsec-policy-based"

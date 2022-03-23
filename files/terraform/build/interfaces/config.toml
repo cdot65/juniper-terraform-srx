@@ -1,0 +1,5 @@
+yangDir = "/home/cdot/dev/juniper-terraform-srx/files/terraform/build/interfaces"
+providerDir = "/home/cdot/dev/juniper-terraform-srx/files/terraform/build/interfaces/provider"
+xpathPath = "/home/cdot/dev/juniper-terraform-srx/files/terraform/build/interfaces/xpath_test.xml"
+fileType = "both"
+providerName = "interfaces"

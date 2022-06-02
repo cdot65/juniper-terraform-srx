@@ -1,0 +1,5 @@
+<file-list>
+    <xpath name="/interfaces/interface/description" />
+    <xpath name="/interfaces/interface-range/unit/family/ethernet-switching/interface-mode" />
+    <xpath name="/interfaces/interface-range/unit/family/ethernet-switching/vlan/members" />
+</file-list>
